@@ -9,7 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-booking_system_frontend/node_modules/
+node_modules/
 develop-eggs/
 dist/
 downloads/
