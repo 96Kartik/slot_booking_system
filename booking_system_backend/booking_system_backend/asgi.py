@@ -9,5 +9,5 @@ django_asgi_app = get_asgi_application()
 
 application = ProtocolTypeRouter({
     "http": django_asgi_app,  # Handles regular HTTP/HTTPS traffic
-    "websocket": URLRouter([path('ws/slots/', SlotConsumer.as_asgi())]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
+    "websocket": URLRouter([path('ws/slots/', SlotConsumer.as_asgi())])
 })
